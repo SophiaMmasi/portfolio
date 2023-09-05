@@ -1,0 +1,138 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #333;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+nav {
+    margin-left: 900px;    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+nav a:hover:nth-child(2) {
+    color: #e67e22;
+}
+
+nav a:hover:nth-child(3) {
+    color: #27ae60;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+p {
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20;
+}
+
+
+body {
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+main {
+    padding-top: 50px;
+}
+  
+.container {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: azure;
+    
+}
+
+.container h3 {
+    font-size: large;
+    text-align: center;
+    color: #333;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#resume {
+    background-color: azure;
+}
