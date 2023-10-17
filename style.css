@@ -9,6 +9,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    display: inline-flexbox;
 }
 
 .logo {
@@ -32,7 +33,7 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 nav a {
@@ -65,9 +66,10 @@ nav a {
 }
 
 .navbar {
-    display: flex;
+    display: inline;
     gap: 15px;
     list-style: none;
+    margin-right: 30px;
 }
 
 p {
@@ -132,7 +134,197 @@ button {
 button:hover {
     background-color: #2980b9;
 }
+.category {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding: 1.375em 1.25em 0;
+    font-size: 1.5em;
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 3.75rem auto 2.5rem;
+    color: #fff;
+    font-family: Work Sans, Arial, sans-serif;
+    max-width: 1015px;
+    padding: 0 20px;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    justify-items: auto auto;
+    gap: 20px;
+}
+.GD {
+    background-color: #00ccb1;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 0;
+    justify-content: space-between;
+    height: 345px;
+}
+
+.GD select {
+    background-color: #00ccb1;
+    border: none;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-style: bold;
+}
+
+.WD {
+    background-color: #3d83df;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 0;
+    justify-content: space-between;
+    height: 345px;
+}
+
+.WD select {
+    background-color: #3d83df;
+    border: none;
+    text-decoration: underline;
+    margin-bottom: 30px;
+    font-style: bold;
+}
+
+.GD h3,
+.WD h3 {
+    font-size: 1.625em;
+    font-weight: 400;
+    color: #fff;
+    margin: 0.3em 0;
+    font-family: Work Sans, Arial, sans-serif;
+}
 
 #resume {
     background-color: azure;
 }
+
+
+/* Default styles for larger screens */
+header {
+    background-color: #333;
+    color: aliceblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex; /* Changed "inline-flexbox" to "flex" */
+    justify-content: space-between; /* Added to align the logo and navigation */
+    align-items: center; /* Center align content vertically */
+    padding: 10px 20px; /* Added padding for better spacing */
+}
+
+nav {
+    margin-left: auto; /* Moved navigation to the right */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.navbar {
+    display: inline;
+    gap: 15px;
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+main {
+    padding-top: 100px; /* Increased padding for better spacing */
+}
+
+.container {
+    width: 80%; /* Adjusted the width to be more responsive */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: azure;
+}
+
+
+/* Responsive styles for smaller screens (e.g., mobile devices) */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack logo and navigation vertically */
+        text-align: fill;
+        position: static; /* or relative, or any other suitable value */
+        display: flex; /* Change to a block-level element for stacking */
+        padding: fill;
+    }
+
+    nav {
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+    }
+
+    nav li {
+        display: block; /* Change list items to stack vertically */
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Added bottom margin for spacing */
+    }
+
+    .navbar {
+        margin-right: 0;
+    }
+    .logo {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center the text */
+    }
+
+    .logo h1 {
+        font-size: 18px; /* Reduce the font size for smaller screens */
+        margin: 8px 0; /* Add some spacing around the text */
+    }
+
+    main {
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding: auto;
+    }
+    .card {
+        flex-direction: column; /* Stack items vertically for smaller screens */
+        display: grid;
+        size: 50px;
+        align-items: center; /* Center items vertically within the card */
+    }
+
+    .container {
+        width: 95%;
+        position: static ;
+    }
+    
+    .category {
+        display: grid;
+    }
+}
+
+/* Additional responsive adjustments can be made here for smaller screens */
